@@ -4,14 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @SpringBootApplication
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class Application {
 	@Getter
 	@Setter
@@ -29,8 +28,7 @@ public class Application {
 		SpringApplication springApplication = new SpringApplication(Application.class);
 		Map<String, Object> properties = new HashMap<>();
 
-		// properties.put("server.servlet.context-path", "/api");
-
+		properties.put("server.servlet.context-path", "/api");
 		properties.put("server.port", String.valueOf(getPort()));
 		properties.put("spring.main.banner-mode", "off");
 

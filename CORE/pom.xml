@@ -16,7 +16,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.github.skanfa.core.LIBS</groupId>
-			<artifactId>localLibs</artifactId>
+			<artifactId>locallibs</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 

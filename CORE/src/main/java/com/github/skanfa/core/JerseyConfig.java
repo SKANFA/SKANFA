@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import net.proselyte.jwtappdemo.service.impl.UserServiceImpl;
+import com.github.skanfa.skanfa.service.impl.UserServiceImpl;
 
 @Configuration
 public class JerseyConfig extends ResourceConfig {
@@ -16,6 +16,8 @@ public class JerseyConfig extends ResourceConfig {
 	public JerseyConfig() {
 		// register(CodeFromVkService.class);
 		register(UserServiceImpl.class);
+
+		System.err.println("JerseyConfig-JerseyConfig-end");
 	}
 
 	@Bean

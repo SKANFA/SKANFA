@@ -8,10 +8,10 @@
 		<artifactId>LIBS</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>localLibs</artifactId>
+	<artifactId>locallibs</artifactId>
 	<packaging>jar</packaging>
 
-	<name>localLibs-localLibs</name>
+	<name>locallibs-locallibs</name>
 
 	<dependencies>
 		<dependency>
